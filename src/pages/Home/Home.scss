@@ -4,4 +4,13 @@
         flex: 6;
         padding: 20px;
     }
+    &__title {
+        font-size: 27px;
+        font-weight: bold;
+    }
+    &__products {
+        display: flex;
+        flex-direction: column;
+    }
 }
+

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useForm, SubmitHandler } from "react-hook-form"
-import { CreateService } from '../../API/createService';
+import { ProductsService } from '../../API/productsService';
 import { valid } from '../../utils/validation';
 import FormControl from '../FormControl/FormControl';
 import "./CreateForm.scss"
@@ -35,7 +35,7 @@ const CreateForm: FC<ICreateFormProps> = ({ file }) => {
         fd.append("size", data.size.toUpperCase())
         fd.append("color", data.color.toLowerCase())
 
-        await CreateService.createProduct(fd)
+        await ProductsService.createProduct(fd)
         reset()
     }
 
