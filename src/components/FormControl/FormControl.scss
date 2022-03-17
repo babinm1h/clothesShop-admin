@@ -1,0 +1,13 @@
+.form__control {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    input {
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+        width: 70%;
+    }
+    label {
+        font-size: 16px;
+    }
+}

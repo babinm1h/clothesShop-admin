@@ -1,0 +1,37 @@
+.create__form {
+    display: flex;
+    flex-direction: column;
+    &__control {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        input {
+            border-bottom: 1px solid #ccc;
+            padding: 5px;
+            width: 70%;
+        }
+        label {
+            font-size: 16px;
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        background-color: teal;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 40px;
+        transition: all 0.1s ease;
+        &:hover {
+            background-color: darken(teal, 5);
+        }
+        &:disabled {
+            background-color: rgb(117, 157, 157);
+            pointer-events: none;
+        }
+    }
+}
