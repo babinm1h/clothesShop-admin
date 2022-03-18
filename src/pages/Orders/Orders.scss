@@ -1,13 +1,10 @@
-.users {
+.orders {
     display: flex;
     &__content {
         flex: 6;
         padding: 20px;
-        h1 {
-            font-weight: bold;
-            font-size: 27px;
-        }
     }
+
     &__list {
         display: flex;
         flex-direction: column;

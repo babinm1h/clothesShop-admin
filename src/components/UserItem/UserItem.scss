@@ -1,0 +1,16 @@
+.users__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    margin-top: 20px;
+    box-shadow: 0 1px 2px #999;
+    img {
+        width: 40px;
+        border-radius: 50%;
+    }
+    &__email {
+        font-size: 16px;
+        margin-left: 20px;
+        flex: 1 1 auto;
+    }
+}

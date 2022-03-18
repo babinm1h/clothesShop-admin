@@ -18,6 +18,7 @@ export interface IUser {
     isAdmin: boolean
     email: string
     id: string
+    _id?: string
 }
 
 
@@ -35,11 +36,18 @@ export interface IAddress {
 }
 
 
+
+
+export enum OrderStatus {
+    pending = "pending",
+    delivered = "delivered"
+}
+
 export interface IOrder {
     _id: string
     products: ICartProduct[]
     amount: number
-    status: string
+    status: OrderStatus
     address: IAddress
 }
 

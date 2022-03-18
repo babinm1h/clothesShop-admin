@@ -4,6 +4,7 @@ import "./ProductItem.scss"
 import { FaTrash } from "react-icons/fa"
 import { useDispatch } from 'react-redux';
 import { deleteProduct } from '../../store/actions/products';
+import { useAppSelector } from '../../hooks/useAppSelector';
 
 
 
@@ -12,6 +13,7 @@ interface IProductItemProps {
 }
 
 const ProductItem: FC<IProductItemProps> = ({ product }) => {
+    const isDeleting = useAppSelector(state => state.products.isDeleting)
     const dispatch = useDispatch()
 
     const handleDelete = () => {
@@ -25,7 +27,9 @@ const ProductItem: FC<IProductItemProps> = ({ product }) => {
             className="home__products__item product__item">
             <img src={product.img} alt="img" />
             <div className="product__item__title">{product.title}</div>
-            <FaTrash color="red" size={15} cursor="pointer" onClick={handleDelete} />
+            <button onClick={handleDelete} disabled={isDeleting}>
+                <FaTrash color="red" size={15} cursor="pointer" />
+            </button>
         </li>
     );
 };

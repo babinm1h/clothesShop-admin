@@ -4,6 +4,7 @@ import { useAppSelector } from '../../hooks/useAppSelector';
 import Create from '../../pages/Create/Create';
 import Home from '../../pages/Home/Home';
 import Login from '../../pages/Login/Login';
+import Orders from '../../pages/Orders/Orders';
 import Users from '../../pages/Users/Users';
 
 
@@ -25,7 +26,7 @@ const privateRoutes = [
     { path: AllRoutes.CREATE, elem: <Create /> },
     { path: AllRoutes.HOME, elem: <Home /> },
     { path: AllRoutes.MAIN, elem: <Home /> },
-    { path: AllRoutes.ORDERS, elem: <Home /> },
+    { path: AllRoutes.ORDERS, elem: <Orders /> },
     { path: AllRoutes.USERS, elem: <Users /> },
 ]
 

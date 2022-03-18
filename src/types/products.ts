@@ -4,6 +4,7 @@ import { IProduct } from "./models";
 export interface IProductsState {
     products: IProduct[]
     isLoading: boolean
+    isDeleting: boolean
 }
 
 

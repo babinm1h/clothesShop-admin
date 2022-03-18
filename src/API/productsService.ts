@@ -1,4 +1,5 @@
-import { $authInstance } from "./instance"; import { IProduct } from "../types/models";
+import { $authInstance } from "./instance"; 
+import { IProduct } from "../types/models";
 
 
 
